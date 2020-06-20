@@ -19,7 +19,19 @@ class Home extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.menu),
+            tooltip: "Navigration",
+            onPressed: () => debugPrint("Navigration Button is Onpressed!"),
+          ),
           title: Text('NINGHAO'),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.search),
+              tooltip: "search",
+              onPressed: () => debugPrint("seardh Button is Onpressed!"),
+            )
+          ],
           elevation: 0.0,
         ),
         body: null);
