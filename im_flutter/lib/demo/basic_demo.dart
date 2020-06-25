@@ -15,11 +15,13 @@ class BasicDemo extends StatelessWidget {
           width: 90.0,
           height: 90.0,
           decoration: BoxDecoration(
-              color: Color.fromRGBO(3, 54, 255, 1.0),
-              border: Border.all(
-                  color: Colors.indigoAccent[100],
-                  width: 3.0,
-                  style: BorderStyle.solid)),
+            color: Color.fromRGBO(3, 54, 255, 1.0),
+            border: Border.all(
+                color: Colors.indigoAccent[100],
+                width: 3.0,
+                style: BorderStyle.solid),
+            borderRadius: BorderRadius.circular(16.0),
+          ),
         )
       ]),
     );
