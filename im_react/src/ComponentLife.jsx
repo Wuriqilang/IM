@@ -44,7 +44,7 @@ export default class ComponentLife extends React.Component {
   };
 
   clickChange = () => {
-    this.props.clickChanges();
+    this.props.clickChange("我是儿子的数据");
   };
 
   render() {
@@ -53,7 +53,7 @@ export default class ComponentLife extends React.Component {
       <div>
         生命周期函数{count} - {this.props.title}
         <button onClick={this.changeHandle}>修改</button>
-        <button onClick={this.clickChanges}>修改Title</button>
+        <button onClick={this.clickChange}>修改Title</button>
       </div>
     );
   }

@@ -2,7 +2,8 @@ import React from "react";
 // import Home from "./Home";
 // import Navbar from "./Navbar";
 // import StateComponent from "./StateComponent";
-import ComponentLife from "./ComponentLife";
+// import ComponentLife from "./ComponentLife";
+import SetStateDemo from "./setStateDemo";
 
 class App extends React.Component {
   constructor() {
@@ -12,9 +13,9 @@ class App extends React.Component {
     };
   }
 
-  clickChange = () => {
+  clickChange = (data) => {
     this.setState({
-      title: "标题2",
+      title: data,
     });
   };
   //渲染函数
@@ -30,8 +31,12 @@ class App extends React.Component {
         <h3>组件OK</h3> */}
         {/* <Home /> */}
         {/* <StateComponent /> */}
-        <ComponentLife title={this.state.title} />
-        <button onClick={this.clickChange}>修改Title</button>
+        {/* <ComponentLife
+          title={this.state.title}
+          clickChange={this.clickChange}
+        />
+        <button onClick={this.clickChange}>修改Title</button> */}
+        <SetStateDemo />
       </div>
     );
   }
