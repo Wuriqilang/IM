@@ -3,8 +3,10 @@ import React from "react";
 // import Navbar from "./Navbar";
 // import StateComponent from "./StateComponent";
 // import ComponentLife from "./ComponentLife";
-import SetStateDemo from "./setStateDemo";
-
+// import SetStateDemo from "./setStateDemo";
+// import IfDemo from "./ifDemo";
+// import KeyDemo from "./KeyDemo";
+import FormDemo from "./formDemo";
 class App extends React.Component {
   constructor() {
     super();
@@ -20,8 +22,8 @@ class App extends React.Component {
   };
   //渲染函数
   render() {
-    const nav1 = ["首页", "学习", "视频"];
-    const nav2 = ["WEB", "Java", "Node"];
+    // const nav1 = ["首页", "学习", "视频"];
+    // const nav2 = ["WEB", "Java", "Node"];
 
     return (
       <div>
@@ -36,7 +38,10 @@ class App extends React.Component {
           clickChange={this.clickChange}
         />
         <button onClick={this.clickChange}>修改Title</button> */}
-        <SetStateDemo />
+        {/* <SetStateDemo /> */}
+        {/* <IfDemo /> */}
+        {/* <KeyDemo /> */}
+        <FormDemo />
       </div>
     );
   }

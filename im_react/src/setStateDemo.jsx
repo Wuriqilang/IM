@@ -18,9 +18,10 @@ export default class SetStateDemo extends React.Component {
     //   }
     // );
     // console.log(this.state.count);
-    this.setStateAsync({
-      count: this.state.count,
+    await this.setStateAsync({
+      count: this.state.count + 1,
     });
+    console.log(this.state.count);
   }
 
   setStateAsync(state) {
@@ -34,7 +35,7 @@ export default class SetStateDemo extends React.Component {
       <div>
         setState同步还是异步
         <p>{this.state.count}</p>
-        <button onClick={this.increment}>修改</button>
+        <button onClick={this.increment.bind(this)}>修改</button>
       </div>
     );
   }
