@@ -6,7 +6,9 @@ import React from "react";
 // import SetStateDemo from "./setStateDemo";
 // import IfDemo from "./ifDemo";
 // import KeyDemo from "./KeyDemo";
-import FormDemo from "./formDemo";
+// import FormDemo from "./formDemo";
+// import RefsAndDom from "./RefsAndDom";
+import Parent from "./components/parent";
 class App extends React.Component {
   constructor() {
     super();
@@ -41,7 +43,9 @@ class App extends React.Component {
         {/* <SetStateDemo /> */}
         {/* <IfDemo /> */}
         {/* <KeyDemo /> */}
-        <FormDemo />
+        {/* <FormDemo />
+        <RefsAndDom /> */}
+        <Parent />
       </div>
     );
   }
